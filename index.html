@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+                                                <!-- Created by Rafael Gasparetto -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio 3</title>
+                    <!-- Links -->
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/responsividade.css">
+                    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Squada+One&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main class="page">
+            <section >
+                <div class="alinhamento_logo">
+                    <div class="card_logo">
+                        <h1>OJOGO</h1>
+                    </div>
+                </div>
+                <div class="contain">
+
+                    <div class="begin">
+                        <img src="src/img/image 1.png" alt="Logo do Game">
+                            
+                        <label for="nick">Nick:</label>
+                        <input type="text" id="nick">
+                        <label for="intervalo">Intervalo:</label>
+                        <select name="intervalo" id="intervalo">
+                            <option value="easy" selected >Opção 1: 1 a 10</option>
+                            <option value="medium">Opção 2: 1 a 100</option>
+                            <option value="hard">Opção 3: 1 a 200</option>
+                        </select>
+
+                        <div class="btn_comecar">
+                            <button type="submit" id="btn_comecar">COMEÇAR</button>
+                            <p id="nick_erro"></p>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Div de separação -->
+
+                    <div class="start">
+                        <div class="paragrafo">
+                            <p>Olá <b id="b_nick">Fulano</b>, vamos jogar!
+                            De acordo com a opção de intervalo que você escolheu, descubra o número. </p>
+                            <h3>Digite um número:</h3>
+                            <input type="number" id="number">
+                        </div>
+                        <div class="btn_jogar">
+                            <button type="submit" id="inside_botao">JOGAR</button>
+                        </div>
+                        <div id="bloco_resposta">
+                            <p id="resposta_p"></p>
+                            <p id="tentativa" ></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
