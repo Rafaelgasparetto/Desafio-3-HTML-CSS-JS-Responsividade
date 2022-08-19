@@ -96,6 +96,7 @@ const ValidarNumeros = () => {
     if(intervalo_result == 'hard'){
         if(numero.value > 200 || numero.value <= 0){
             resultado_final.innerHTML = (`numero invalido`);              //Mensagem de numero invalido no Game.
+            tentativa.innerHTML = ('');
             chances++;    // Caso o usuario digitar um numero fora do intervalo não perderá tentativas.
         }
     }
@@ -104,6 +105,7 @@ const ValidarNumeros = () => {
     if(intervalo_result == 'medium'){
         if(numero.value > 100 || numero.value <= 0){
             resultado_final.innerHTML = (`numero invalido`);
+            tentativa.innerHTML = ('');
             chances++;
         }
     }
@@ -112,12 +114,14 @@ const ValidarNumeros = () => {
     if(intervalo_result == 'easy'){
         if(numero.value > 10 || numero.value <= 0){
             resultado_final.innerHTML = (`numero invalido`);
+            tentativa.innerHTML = ('');
             chances++;
         }
     }
     //                                              Validando String, NaN, Undefined. 
     if(intervalo_result == "" || intervalo_result == NaN || intervalo_result == undefined){
         resultado_final.innerHTML = (`Calma, não tenha pressa, coloque o nick e o intervalo primeiro :D`); // Caso o usuario nao entrar com nick e intervalo (opções).
+        tentativa.innerHTML = ('');
         chances++;
     }
 }

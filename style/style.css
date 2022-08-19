@@ -34,13 +34,24 @@ section{
 }
 /*                       /* Begin Logo principal */
 
-.alinhamento_logo{
+fieldset{
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--white);
     width: 1084px;
-    height: 150px;    
+    height: 645px;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .card_logo{
@@ -56,14 +67,15 @@ section{
     font-family: 'Squada One';
 }
 
-.card_logo h1{
+legend p {
     width: 162px;
     height: 74px;
     font-size: 70px;
     font-weight: 400px;
     line-height: 74px;
-    color: var(--black);
+    color: var(--black); 
 }
+
 /*                      /* END of Logo Principal */
 
 /*                      /* Begin Conteudo da Página */

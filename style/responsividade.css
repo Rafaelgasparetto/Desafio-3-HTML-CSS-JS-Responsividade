@@ -5,6 +5,7 @@ body{
     height: 1321px;
     margin: 0 auto;
     background-color: var(--orange);
+
 }
 
 .page{
@@ -23,9 +24,15 @@ section{
 
 /*                               /* Begin Logo principal (Mobile 428px) */
 
-.alinhamento_logo{
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
     width: 320px;
-    height: 150px;    
+    height: 1150px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .card_logo{
@@ -36,7 +43,7 @@ section{
     font-family: 'Squada One';
 }
 
-.card_logo h1{
+legend p{
     width: 162px;
     height: 74px;
     font-size: 70px;
@@ -207,21 +214,5 @@ section{
 }
 
 /*                                    /* End of Game (Mobile 428px) */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
