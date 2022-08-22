@@ -30,12 +30,15 @@ const ComecarJogo = () => {
     }else{
         span_nick.innerHTML = (`${nick.value}`);
         nick_erro.innerHTML = (``); // tirando a mensagem de erro da tela se caso colocar o nick.
+        ComecarGame(); // assim que validar o nick, o botao desabilita e muda de cor.
     }
     // Pegando valor do intervalo (opção 1, opção 2 ou opção 3)
     intervalo_result = intervalo.value;
 
     //chamando função gerar numero aleatorio inteiro.
     GerarNumeroAleatorio(numero_secreto);
+
+
 }
 //---------------------------------------------------------------------------------------------------------
 //      Botao para Validar nick / Receber o valor das opçoes / Gerar numero aleatorio inteiro!
@@ -59,6 +62,7 @@ const AdvinharNumero = () =>{
 
     //chamando função para validação de numeros do input.
     ValidarNumeros(); 
+
 }
 //---------------------------------------------------------------------------------------------------------
 //  Botao para ativar função de validação / Comparaçoes!
@@ -153,8 +157,24 @@ function GerarNumerosInteiros(min, max) {
 //  Desafio extra com a função /\ Math.random 
 
 //---------------------------------------------------------------------------------------------------------
-//  Função que desabilita o Botão jogar
+//  Função que desabilita os Botões e mudando de cor
 
 const FecharGame = () =>{
+
     botao_jogar.disabled = true;
+    
+    if(botao_jogar.disabled == true){
+        botao_jogar.style.backgroundColor = "#656363"
+    }
+}
+
+const ComecarGame = () =>{
+
+    botao_comecar.disabled = true;
+
+    if(botao_comecar.disabled == true){
+        botao_comecar.style.backgroundColor = "#656363"
+    }
+
+
 }

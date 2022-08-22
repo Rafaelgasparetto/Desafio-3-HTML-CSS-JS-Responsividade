@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-left: 53px;
+    margin-right: 38px;
 }
 
 section{
@@ -33,6 +34,7 @@ fieldset{
     border-radius: 20px;
     justify-content: center;
     align-items: flex-end;
+    margin-right: 32px;
 }
 
 .card_logo{
